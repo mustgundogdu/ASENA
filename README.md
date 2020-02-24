@@ -18,6 +18,12 @@ Let's install scapy developer first:
  * cd scapy
   
  * python setup.py install
+ 
+Then download asena 
+
+* git clone https://github.com/mustgundogdu/ASENA.git
+
+
 
 
 USAGE:
