@@ -7,11 +7,17 @@ The reason for the Asena analogy comes from the ability to guide packets on the 
 
 
 Instalation:
-Let's install scapy developer first
-cd /tmp/
-git clone https://github.com/secdev/scapy.git
-cd scapy
-python setup.py install
+
+
+Let's install scapy developer first:
+
+ * cd /tmp/
+  
+ * git clone https://github.com/secdev/scapy.git
+  
+ * cd scapy
+  
+ * python setup.py install
 
 
 USAGE:
