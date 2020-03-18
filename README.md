@@ -6,7 +6,7 @@ The reason for the Asena analogy comes from the ability to guide packets on the 
 ![](https://github.com/mustgundogdu/ASENA/blob/master/asena.jpg)
 
 
-Instalation:
+Installation:
 
 
 Let's install scapy developer first:
