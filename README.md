@@ -28,34 +28,34 @@ Then download asena
 
 USAGE:
 
-![](https://github.com/mustgundogdu/ASENA/blob/master/help.png)
+![](https://github.com/mustgundogdu/ASENA/blob/master/asena_help.png)
 
-With the Asena tool, we can detect active machines in our network with the arp query.
 
-For this:
-
-./asena.py -s -i 192.168.2.0/24
 
 We can also list the ports open on the target machine.
 
 For example:
 
-./asena.py --pscan -i 192.168.2.143
+python asena.py --pscan -i 192.168.2.143
+
+Also With the Asena tool, we can detect active machines in our network with the arp query.
+
+For this:
+
+![](https://github.com/mustgundogdu/ASENA/blob/master/asena_networkscan.png)
+
 
 Performs ack scan for firewall detection on open ports.
 
  For example:
  
-./asena.py -f -i 192.168.2.143
+python asena.py -f -i 192.168.2.143
 
 It also performs an arpspoof attack using scapy again.
 
 For example:
 
-./asena.py --arpspoof
+python asena.py --mitm -t 192.168.2.154 -g 192.168.2.1
 
-It also shows the packet exit addresses using the traceroute working principle.
 
-For example:
 
-./asena.py --trace
