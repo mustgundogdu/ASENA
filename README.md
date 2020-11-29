@@ -12,7 +12,7 @@
  Asena is the female wolf that guides the oğuz kağan in Turkish mythology.
 The reason for the Asena analogy comes from the ability to guide packets on the network.Written with asena scapy module. to run you need to download scapy module.
 
-![](https://github.com/mustgundogdu/ASENA/blob/master/scrrenshot/asena.jpg)
+![](https://github.com/mustgundogdu/ASENA/blob/master/screenshot/asena.jpg)
 
 
 
