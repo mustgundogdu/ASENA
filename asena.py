@@ -23,11 +23,8 @@ import sys
 import os
 import socket
 import argparse
-import thread
 import subprocess
 import ipcalc
-
-
 
 
 
@@ -36,14 +33,12 @@ class Active_Machine:
 
     #Arp packets create and check
     def arp_packet_create(self, sub, i_face):
-	
-	#check process
-	try:
-
+        try:
             print(Fore.GREEN+" "*20+"[*]STARTING ARP REQUEST IN THE NETWORK[*]")
-	    #Assegment values from received
-	    target_subnet = sub
-	    interface = i_face
+
+            #Assegment values from received
+            target_subnet = sub
+            interface = i_face
 
             #Create mac list
             mac_list = []
@@ -130,8 +125,6 @@ class Active_Machine:
             print(Fore.RED+"[-]ASENA IS SHUTDOWN[-]")
             #sucess exit
             sys.exit(0)
-
-
 
 
 class Port_Scan_Classic:
